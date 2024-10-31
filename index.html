@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Login</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row mt-2">
+                <div class="col-md-6 side-image py-3">
+                </div>
+
+                <div class="col-md-6 right">
+                    <div class="input-box mt-5 m-3">
+                        <div style="margin-bottom: 25px;" class="d-flex flex-row align-items-center   ">
+                            <img class="logoImg ms-2" src="./images/logo.png" alt="" />
+                            <h2 class="m-0">LOGO</h2>
+                        </div>
+
+
+                        <h5 class="ms-2">Nice to see you again</h5>
+
+                        <label for="email" class="inputtext">Login</label>
+                        <div class="inputtext">
+                            <input type="text" placeholder=" Enter Email or Phone Number"
+                                class="rounded form-control txtbox"
+                                style="width: 305px; background-color: rgb(233, 233, 240); border: none; height: 45px;">
+                        </div>
+                        <label for="pass" class="inputtext">Password</label>
+                        <div class="inputtext" style="margin-bottom: 12px;">
+
+                            <input id="pass" type="password" placeholder=" Enter Password"
+                                class="rounded form-control txtbox"
+                                style="width: 305px ;background-color:  rgb(233, 233, 240); border: none; height: 45px;">
+                        </div>
+
+                        <div class="remember-me">
+
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="rememberMe">
+                                <span class="slider"></span>
+
+                            </div>
+                            <Label class="label2" style="font-size: smaller; margin-left: -60px;">Remember me</Label>
+                            <label style="color: #007AFF; font-size: smaller;" for="rememberMe" class="label2">Forgot
+                                Password?</label>
+                        </div>
+
+                        <div class="input-field">
+
+                            <input type="submit" class="submit" value="Sign in">
+                        </div>
+
+                        <div class="button-container">
+                            <button class="google-login-btn" onclick="handleGoogleLogin()">
+                                <img width="20px" height="20px" src="./images/google-icon.png" alt="" /> Login with
+                                Google
+                            </button>
+                        </div>
+
+                        <div class="signin">
+                            <span>Don't have an account? <a href="#"><span style="color: #007AFF;">Sign up
+                                        Now</span></a></span>
+                        </div>
+
+                        <img src="./images/Frame.png" alt="no image" class="mt-2">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
